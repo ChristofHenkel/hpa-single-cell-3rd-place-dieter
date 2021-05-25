@@ -1,3 +1,7 @@
+#
+WORK IN PROGRESS
+
+
 # 3rd place solution Dieter part
 
 Summary of approach can be found under 
