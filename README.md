@@ -1,8 +1,7 @@
-#
-WORK IN PROGRESS
+# WORK IN PROGRESS
 
 
-# 3rd place solution Dieter part
+## 3rd place solution Dieter part
 
 Summary of approach can be found under 
 https://www.kaggle.com/c/hpa-single-cell-image-classification/discussion/238898
