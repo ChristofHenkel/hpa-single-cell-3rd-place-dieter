@@ -172,6 +172,10 @@ from numba import jit
 
 @jit
 def fast_auc(y_true, y_prob):
+    """
+    from cpmp
+    https://www.kaggle.com/c/microsoft-malware-prediction/discussion/76013
+    """
     y_true = np.asarray(y_true)
     y_true = y_true[np.argsort(y_prob)]
     nfalse = 0
