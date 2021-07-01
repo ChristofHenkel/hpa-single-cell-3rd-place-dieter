@@ -4,14 +4,15 @@ import os
 
 cfg = basic_cfg
 cfg.name = os.path.basename(__file__).split(".")[0]
+
+#ADJUST PATHS
 cfg.data_dir = '/raid/hpa-single-cell-image-classification/'
+cfg.mask_folder = '/raid/hpa-single-cell-image-classification/cell_masks_v5/train/'
+cfg.output_dir = f"/mount/hpass/models/{os.path.basename(__file__).split('.')[0]}"
+
+
 cfg.data_folder = cfg.data_dir + 'train/'
 cfg.train_df = 'train_4folded_cells.csv'
-if os.uname()[1] == 'cloe':
-    cfg.output_dir = f"/home/christof/kaggle/hpass/models/{os.path.basename(__file__).split('.')[0]}"
-else:
-    cfg.output_dir = f"/mount/hpass/models/{os.path.basename(__file__).split('.')[0]}"
-
 cfg.lr = 0.0001
 cfg.epochs = 10
 cfg.batch_size = 16
@@ -21,7 +22,7 @@ cfg.maxlen = 16
 #dataset
 cfg.dataset = 'cell_ds7'
 # cfg.suffix = 'npy'
-cfg.mask_folder = '/raid/hpa-single-cell-image-classification/cell_masks_v5/train/'
+
 cfg.suffix = 'png'
 cfg.gpu = 0
 cfg.num_workers = 16
