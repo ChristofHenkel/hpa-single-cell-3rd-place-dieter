@@ -1,2 +1,2 @@
-timm
-transformers
+timm==0.4.12
+transformers==4.8.2

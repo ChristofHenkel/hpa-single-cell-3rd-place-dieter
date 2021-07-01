@@ -9,6 +9,9 @@
 Summary of approach can be found under 
 https://www.kaggle.com/c/hpa-single-cell-image-classification/discussion/238898
 
+
+Run `pip install -r requirements.txt` for dependencies
+
 To download necessary data you can use the kaggle API
 
 
