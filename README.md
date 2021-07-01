@@ -23,12 +23,28 @@ unzip hpa-single-cell-image-classification.zip -d ./input/
 As a preprocessing step its necessary to create single cell masks using the HPA-Cell-Segmentation, which is available under https://github.com/CellProfiling/HPA-Cell-Segmentation
 I made them public in the dataset https://kaggle.com/christofhenkel/hpa-single-cell-3rd-place-dieter-masks
 
-and you can download using 
+so you can download using 
 
 ```
 kaggle datasets download christofhenkel/hpa-single-cell-3rd-place-dieter-masks
 unzip hpa-single-cell-3rd-place-dieter-masks.zip -d ./input/
 ```
+
+the folder structure should look like
+
+hpa-single-cell-3rd-place-dieter
+├── input
+│   ├── train
+│       ├── 000a6c98-bb9b-11e8-b2b9-ac1f6b6435d0_blue.png
+│       └── ...
+│   ├── test
+│   ├── cell_masks_v5
+│   ├── train_4folded_cells.csv
+│   └── train_4folded.csv
+├── models
+├── data
+├── configs
+└── ...
 
 as a minimum working example run 
 
