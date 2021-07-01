@@ -16,7 +16,8 @@ To download necessary data you can use the kaggle API
 
 
 ```
-kaggle competitions download hpa-single-cell-image-classification -p ./input/
+kaggle competitions download hpa-single-cell-image-classification 
+unzip hpa-single-cell-image-classification.zip -d ./input/
 ```
 
 As a preprocessing step its necessary to create single cell masks using the HPA-Cell-Segmentation, which is available under https://github.com/CellProfiling/HPA-Cell-Segmentation
@@ -25,7 +26,8 @@ I made them public in the dataset https://kaggle.com/christofhenkel/hpa-single-c
 and you can download using 
 
 ```
-kaggle datasets download christofhenkel/hpa-single-cell-3rd-place-dieter-masks -p ./input/
+kaggle datasets download christofhenkel/hpa-single-cell-3rd-place-dieter-masks
+unzip hpa-single-cell-3rd-place-dieter-masks.zip -d ./input/
 ```
 
 as a minimum working example run 

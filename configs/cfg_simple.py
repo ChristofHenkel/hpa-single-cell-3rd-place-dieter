@@ -6,9 +6,9 @@ cfg = basic_cfg
 cfg.name = os.path.basename(__file__).split(".")[0]
 
 #ADJUST PATHS
-cfg.data_dir = '/raid/hpa-single-cell-image-classification/'
-cfg.mask_folder = '/raid/hpa-single-cell-image-classification/cell_masks_v5/train/'
-cfg.output_dir = f"/mount/hpass/models/{os.path.basename(__file__).split('.')[0]}"
+cfg.data_dir = './input/'
+cfg.mask_folder = './input/cell_masks_v5/train/'
+cfg.output_dir = f"./output/models/{os.path.basename(__file__).split('.')[0]}"
 
 
 cfg.data_folder = cfg.data_dir + 'train/'
