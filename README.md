@@ -3,11 +3,33 @@
 
 ## 3rd place solution Dieter part
 
+
+
+
 Summary of approach can be found under 
 https://www.kaggle.com/c/hpa-single-cell-image-classification/discussion/238898
 
+To download necessary data you can use the kaggle API
+
+
+```
+kaggle competitions download hpa-single-cell-image-classification -p ./input/
+```
 
 As a preprocessing step its necessary to create single cell masks using the HPA-Cell-Segmentation, which is available under https://github.com/CellProfiling/HPA-Cell-Segmentation
+I made them public in the dataset https://kaggle.com/christofhenkel/hpa-single-cell-3rd-place-dieter-masks
+
+and you can download using 
+
+```
+kaggle datasets download christofhenkel/hpa-single-cell-3rd-place-dieter-masks -p ./input/
+```
+
+as a minimum working example run 
+
+```
+python train.py -C cfg_simple
+```
 
 After that the 4 basemodels can be trained by running
 

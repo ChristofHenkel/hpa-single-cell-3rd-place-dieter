@@ -362,7 +362,7 @@ if __name__ == "__main__":
 
 
     #setup dataset
-    train = pd.read_csv(cfg.data_dir + cfg.train_df)
+    train = pd.read_csv(cfg.train_df)
 
     val_df = train[train['fold'] == cfg.fold]
     train_df = train[train['fold'] != cfg.fold]
