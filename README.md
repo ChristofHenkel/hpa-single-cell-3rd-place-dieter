@@ -32,6 +32,7 @@ unzip hpa-single-cell-3rd-place-dieter-masks.zip -d ./input/
 
 the folder structure should look like
 
+```
 hpa-single-cell-3rd-place-dieter
 ├── input
 │   ├── train
@@ -45,6 +46,7 @@ hpa-single-cell-3rd-place-dieter
 ├── data
 ├── configs
 └── ...
+```
 
 as a minimum working example run 
 
